@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) {
       setStatusMessage(texts.contact.validationError);
@@ -20,15 +20,22 @@ const Contact: React.FC = () => {
     }
 
     try {
-      const existingSubmissions = JSON.parse(localStorage.getItem('contactSubmissions') || '[]');
-      const newSubmission = { ...formData, timestamp: new Date().toISOString() };
-      existingSubmissions.push(newSubmission);
-      localStorage.setItem('contactSubmissions', JSON.stringify(existingSubmissions));
+      const response = await fetch('https://formspree.io/f/xovngqno', { // <-- Tu URL ya está aquí
+        method: 'POST',
+        body: JSON.stringify(formData),
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
 
-      setStatusMessage(texts.contact.successMessage);
-      setFormData({ name: '', email: '', message: '' });
+      if (response.ok) {
+        setStatusMessage(texts.contact.successMessage);
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setStatusMessage(texts.contact.errorMessage);
+      }
     } catch (error) {
-      console.error("Failed to save submission to localStorage", error);
+      console.error("Failed to send submission", error);
       setStatusMessage(texts.contact.errorMessage);
     } finally {
         setTimeout(() => setStatusMessage(''), 5000);
