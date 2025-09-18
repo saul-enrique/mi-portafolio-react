@@ -68,27 +68,27 @@ const en = {
     projectCardRepoButton: 'GitHub',
     projectsData: [
       {
-        title: 'E-commerce Platform',
-        description: 'A full-featured e-commerce website built with React, Node.js, and a PostgreSQL database. Includes user authentication, product catalog, and a payment gateway.',
-        imageUrl: 'https://picsum.photos/seed/project1/400/300',
-        liveUrl: '#',
-        repoUrl: '#',
+        title: 'MLB Tracker',
+        description: 'A web application to track real-time MLB baseball game results, standings, and player statistics. Built with modern web technologies.',
+        imageUrl: '/images/mlb-tracker-screenshot.png',
+        liveUrl: 'https://mlb-tracker-kohl.vercel.app/',
+        repoUrl: 'https://github.com/saul-enrique/mlb-tracker'
       },
       {
-        title: 'Task Management App',
-        description: 'A responsive task management application that helps users organize their daily tasks with a clean and intuitive drag-and-drop interface.',
+        title: 'Project Two (Placeholder)',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         imageUrl: 'https://picsum.photos/seed/project2/400/300',
         liveUrl: '#',
-        repoUrl: '#',
+        repoUrl: '#'
       },
       {
-        title: 'Personal Blog',
-        description: 'A static-generated blog using a modern framework like Next.js, with content managed through a headless CMS. Optimized for performance and SEO.',
+        title: 'Project Three (Placeholder)',
+        description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         imageUrl: 'https://picsum.photos/seed/project3/400/300',
         liveUrl: '#',
-        repoUrl: '#',
-      },
-    ] as Project[],
+        repoUrl: '#'
+      }
+    ],
 
     // Skills
     skillsTitle: 'My <span class="text-gradient">Tech Stack</span>',
@@ -234,27 +234,27 @@ const es = {
     projectCardRepoButton: 'GitHub',
     projectsData: [
       {
-        title: 'Plataforma de E-commerce',
-        description: 'Un sitio web de e-commerce con todas las funciones, construido con React, Node.js y una base de datos PostgreSQL. Incluye autenticación de usuarios, catálogo de productos y una pasarela de pago.',
-        imageUrl: 'https://picsum.photos/seed/project1/400/300',
-        liveUrl: '#',
-        repoUrl: '#',
+        title: 'MLB Tracker',
+        description: 'Una aplicación web para seguir en tiempo real los resultados de los partidos de la MLB, las clasificaciones y las estadísticas de los jugadores. Creada con tecnologías web modernas.',
+        imageUrl: '/images/mlb-tracker-screenshot.png',
+        liveUrl: 'https://mlb-tracker-kohl.vercel.app/',
+        repoUrl: 'https://github.com/saul-enrique/mlb-tracker'
       },
       {
-        title: 'Aplicación de Gestión de Tareas',
-        description: 'Una aplicación de gestión de tareas responsiva que ayuda a los usuarios a organizar sus tareas diarias con una interfaz limpia e intuitiva de arrastrar y soltar.',
+        title: 'Proyecto Dos (Ejemplo)',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         imageUrl: 'https://picsum.photos/seed/project2/400/300',
         liveUrl: '#',
-        repoUrl: '#',
+        repoUrl: '#'
       },
       {
-        title: 'Blog Personal',
-        description: 'Un blog generado estáticamente usando un framework moderno como Next.js, con contenido gestionado a través de un CMS headless. Optimizado para rendimiento y SEO.',
+        title: 'Proyecto Tres (Ejemplo)',
+        description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         imageUrl: 'https://picsum.photos/seed/project3/400/300',
         liveUrl: '#',
-        repoUrl: '#',
-      },
-    ] as Project[],
+        repoUrl: '#'
+      }
+    ],
 
     // Skills
     skillsTitle: 'Mi <span class="text-gradient">Stack Tecnológico</span>',
