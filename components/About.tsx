@@ -12,10 +12,10 @@ const About: React.FC = () => {
       <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
         <div className="w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
           <img
-            src="https://picsum.photos/seed/developer-portrait/256/256"
-            alt="Saul"
-            className="rounded-lg object-cover w-full h-full shadow-lg shadow-purple-900/40 grayscale filter"
-          />
+  src="/images/foto-perfil.png"
+  alt="Foto de perfil de Saúl Enrique"
+  className="rounded-lg object-cover w-full h-full shadow-lg shadow-purple-900/40"
+/>
         </div>
         <div className="text-center md:text-left">
           <p className="text-gray-300 leading-relaxed mb-6">
