@@ -1,4 +1,9 @@
+import React from 'react';
 import { JourneyItem, Project, Skill, SkillCategory, Social, Tool } from './types';
+import {
+  SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiNodedotjs, SiExpress,
+  SiMongodb, SiPostgresql, SiGit, SiDocker, SiVite, SiTailwindcss
+} from 'react-icons/si';
 
 export const translations = {
   en: {
@@ -30,20 +35,8 @@ export const translations = {
     journeyTitle: 'My <span class="text-gradient">Journey</span>',
     journeyEducationTitle: 'Education',
     journeyExperienceTitle: 'Experience',
-    educationData: [
-      {
-        date: '2023 - Present',
-        title: 'Self-Taught Learning',
-        institution: 'Online Platforms & Personal Projects',
-      },
-    ] as JourneyItem[],
-    experienceData: [
-      {
-        date: '2022 - Present',
-        title: 'Freelance Web Developer',
-        institution: 'Building projects for small businesses',
-      },
-    ] as JourneyItem[],
+    educationData: [{ date: '2023 - Present', title: 'Self-Taught Learning', institution: 'Online Platforms & Personal Projects' }] as JourneyItem[],
+    experienceData: [{ date: '2022 - Present', title: 'Freelance Web Developer', institution: 'Building projects for small businesses' }] as JourneyItem[],
 
     // Projects
     projectsTitle: 'My <span class="text-gradient">Creations</span>',
@@ -59,7 +52,7 @@ export const translations = {
       },
       {
         title: 'React Homepage',
-        description: 'A customizable and dynamic homepage built with React, designed to be your browser\'s starting point. Includes widgets for weather, clock, and a to-do list.',
+        description: "A customizable and dynamic homepage built with React, designed to be your browser's starting point. Includes widgets for weather, clock, and a to-do list.",
         imageUrl: '/images/homepage.png',
         liveUrl: 'https://mi-react-homepage.vercel.app/',
         repoUrl: 'https://github.com/saul-enrique/mi-react-homepage'
@@ -73,7 +66,7 @@ export const translations = {
       }
     ] as Project[],
 
-    // Skills, Contact, Footer... (Manteniendo el resto del archivo como estaba)
+    // Skills
     skillsTitle: 'My <span class="text-gradient">Tech Stack</span>',
     skillsIntro: 'As a passionate self-taught developer, I have built my skill set focusing on the most in-demand technologies for modern web development.',
     skillsToolsTitle: 'Tools',
@@ -84,8 +77,22 @@ export const translations = {
       [SkillCategory.WEB_DEV]: 'Web Dev',
       [SkillCategory.SOFTWARE_DEV]: 'Software Dev'
     },
-    skillsData: [] as Skill[], // Dejado como estaba en el original
-    toolsData: [] as Tool[], // Dejado como estaba en el original
+    skillsData: [
+      { name: 'HTML5 & CSS3', category: [SkillCategory.FRONT_END, SkillCategory.WEB_DEV] },
+      { name: 'Responsive Design', category: [SkillCategory.FRONT_END, SkillCategory.WEB_DEV] },
+      { name: 'REST APIs', category: [SkillCategory.BACK_END, SkillCategory.WEB_DEV] },
+      { name: 'Git Flow', category: [SkillCategory.SOFTWARE_DEV] },
+    ] as Skill[],
+    toolsData: [
+      { name: 'JavaScript', icon: <SiJavascript size={24} className="mr-3 text-yellow-400" />, category: [SkillCategory.FRONT_END, SkillCategory.BACK_END, SkillCategory.WEB_DEV] },
+      { name: 'TypeScript', icon: <SiTypescript size={24} className="mr-3 text-blue-500" />, category: [SkillCategory.FRONT_END, SkillCategory.BACK_END, SkillCategory.WEB_DEV] },
+      { name: 'React', icon: <SiReact size={24} className="mr-3 text-sky-400" />, category: [SkillCategory.FRONT_END, SkillCategory.WEB_DEV] },
+      { name: 'Tailwind CSS', icon: <SiTailwindcss size={24} className="mr-3 text-teal-400" />, category: [SkillCategory.FRONT_END, SkillCategory.WEB_DEV] },
+      { name: 'Node.js', icon: <SiNodedotjs size={24} className="mr-3 text-green-500" />, category: [SkillCategory.BACK_END] },
+      { name: 'Git', icon: <SiGit size={24} className="mr-3 text-red-500" />, category: [SkillCategory.SOFTWARE_DEV] },
+    ] as Tool[],
+
+    // Contact
     contact: {
       title: 'Get in <span class="text-gradient">Touch</span>',
       namePlaceholder: 'Your Name',
@@ -96,26 +103,21 @@ export const translations = {
       validationError: 'Please fill out all fields.',
       errorMessage: 'Something went wrong. Please try again.',
     },
-    socials: [] as Social[], // Dejado como estaba en el original
+    socials: [] as Social[],
     footerText: '© 2024 Saul. All rights reserved.',
-
   },
   es: {
-    // Header
+    // Spanish translations
     navHome: 'Inicio',
     navAbout: 'Sobre mí',
     navProjects: 'Proyectos',
     navSkills: 'Stack',
     navContact: 'Contacto',
-
-    // Hero
     heroTitle: 'Hola, soy Saúl',
     heroRoles: ['Desarrollador Web', 'Entusiasta UI/UX', 'Solucionador de Problemas'],
     heroSubtitle1: 'Construyendo tu sueño',
     heroSubtitle2: 'píxel a píxel!',
     heroButton: 'Leer Más',
-
-    // About
     aboutTitle: '¿Por qué contratarme para tu <span class="text-gradient">próximo proyecto?</span>',
     aboutDescription: 'Un desarrollador autodidacta, apasionado y proactivo, con una sólida base en desarrollo web. Impulsado por el deseo de aprender y construir aplicaciones de alta calidad, mis proyectos personales reflejan mi dedicación y mi capacidad para resolver problemas.',
     aboutButtonPortfolio: 'Portafolio',
@@ -124,27 +126,11 @@ export const translations = {
     aboutExperienceText: 'De Código',
     aboutProjectsNumber: '5+ Proyectos',
     aboutProjectsText: 'Completados',
-    
-    // Journey
     journeyTitle: 'Mi <span class="text-gradient">Trayectoria</span>',
     journeyEducationTitle: 'Educación',
     journeyExperienceTitle: 'Experiencia',
-    educationData: [
-      {
-        date: '2023 - Presente',
-        title: 'Aprendizaje Autodidacta',
-        institution: 'Plataformas en Línea y Proyectos Personales',
-      },
-    ] as JourneyItem[],
-    experienceData: [
-      {
-        date: '2022 - Presente',
-        title: 'Desarrollador Web Freelance',
-        institution: 'Creando proyectos para pequeñas empresas',
-      },
-    ] as JourneyItem[],
-    
-    // Projects
+    educationData: [{ date: '2023 - Presente', title: 'Aprendizaje Autodidacta', institution: 'Plataformas en Línea y Proyectos Personales' }] as JourneyItem[],
+    experienceData: [{ date: '2022 - Presente', title: 'Desarrollador Web Freelance', institution: 'Creando proyectos para pequeñas empresas' }] as JourneyItem[],
     projectsTitle: 'Mis <span class="text-gradient">Creaciones</span>',
     projectCardLiveButton: 'Ver Demo',
     projectCardRepoButton: 'GitHub',
@@ -171,8 +157,6 @@ export const translations = {
         repoUrl: '#'
       }
     ] as Project[],
-
-    // Skills, Contact, Footer... (Manteniendo el resto del archivo como estaba)
     skillsTitle: 'Mi <span class="text-gradient">Stack Tecnológico</span>',
     skillsIntro: 'Como desarrollador apasionado y autodidacta, he construido mi conjunto de habilidades centrándome en las tecnologías más demandadas para el desarrollo web moderno.',
     skillsToolsTitle: 'Herramientas',
@@ -183,8 +167,20 @@ export const translations = {
       [SkillCategory.WEB_DEV]: 'Desarrollo Web',
       [SkillCategory.SOFTWARE_DEV]: 'Desarrollo de Software'
     },
-    skillsData: [] as Skill[], // Dejado como estaba en el original
-    toolsData: [] as Tool[], // Dejado como estaba en el original
+    skillsData: [
+        { name: 'HTML5 & CSS3', category: [SkillCategory.FRONT_END, SkillCategory.WEB_DEV] },
+        { name: 'Diseño Responsivo', category: [SkillCategory.FRONT_END, SkillCategory.WEB_DEV] },
+        { name: 'APIs REST', category: [SkillCategory.BACK_END, SkillCategory.WEB_DEV] },
+        { name: 'Flujo de Git', category: [SkillCategory.SOFTWARE_DEV] },
+    ] as Skill[],
+    toolsData: [
+      { name: 'JavaScript', icon: <SiJavascript size={24} className="mr-3 text-yellow-400" />, category: [SkillCategory.FRONT_END, SkillCategory.BACK_END, SkillCategory.WEB_DEV] },
+      { name: 'TypeScript', icon: <SiTypescript size={24} className="mr-3 text-blue-500" />, category: [SkillCategory.FRONT_END, SkillCategory.BACK_END, SkillCategory.WEB_DEV] },
+      { name: 'React', icon: <SiReact size={24} className="mr-3 text-sky-400" />, category: [SkillCategory.FRONT_END, SkillCategory.WEB_DEV] },
+      { name: 'Tailwind CSS', icon: <SiTailwindcss size={24} className="mr-3 text-teal-400" />, category: [SkillCategory.FRONT_END, SkillCategory.WEB_DEV] },
+      { name: 'Node.js', icon: <SiNodedotjs size={24} className="mr-3 text-green-500" />, category: [SkillCategory.BACK_END] },
+      { name: 'Git', icon: <SiGit size={24} className="mr-3 text-red-500" />, category: [SkillCategory.SOFTWARE_DEV] },
+    ] as Tool[],
     contact: {
       title: 'Ponte en <span class="text-gradient">Contacto</span>',
       namePlaceholder: 'Tu Nombre',
@@ -195,7 +191,7 @@ export const translations = {
       validationError: 'Por favor, rellena todos los campos.',
       errorMessage: 'Algo salió mal. Por favor, inténtalo de nuevo.',
     },
-    socials: [] as Social[], // Dejado como estaba en el original
+    socials: [] as Social[],
     footerText: '© 2024 Saúl. Todos los derechos reservados.',
   },
 };
