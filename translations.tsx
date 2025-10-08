@@ -58,11 +58,11 @@ export const translations = {
         repoUrl: 'https://github.com/saul-enrique/mi-react-homepage'
       },
       {
-        title: 'Project Three (Placeholder)',
-        description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        imageUrl: 'https://picsum.photos/seed/project3/400/300',
-        liveUrl: '#',
-        repoUrl: '#'
+        title: 'The Essential Album',
+        description: 'A full-stack app that solves a common question for music fans: Where do I start with a new artist? The app finds an artist\'s most representative album and saves it to your Spotify account with one click.',
+        imageUrl: '/images/spotify-mood-app.png',
+        liveUrl: 'https://saulbracamonte.pythonanywhere.com/',
+        repoUrl: 'https://github.com/saul-enrique/spotify-mood-app'
       }
     ] as Project[],
 
@@ -150,11 +150,11 @@ export const translations = {
         repoUrl: 'https://github.com/saul-enrique/mi-react-homepage'
       },
       {
-        title: 'Proyecto Tres (Ejemplo)',
-        description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        imageUrl: 'https://picsum.photos/seed/project3/400/300',
-        liveUrl: '#',
-        repoUrl: '#'
+        title: 'El Álbum Esencial',
+        description: '"El Álbum Esencial" es una app full-stack que resuelve una pregunta para fans de la música: ¿Por dónde empiezo con un artista nuevo? La app busca el álbum más representativo y lo guarda en tu Spotify con un clic.',
+        imageUrl: '/images/spotify-mood-app.png',
+        liveUrl: 'https://saulbracamonte.pythonanywhere.com/',
+        repoUrl: 'https://github.com/saul-enrique/spotify-mood-app'
       }
     ] as Project[],
     skillsTitle: 'Mi <span class="text-gradient">Stack Tecnológico</span>',
