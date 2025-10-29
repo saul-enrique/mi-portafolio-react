@@ -1,20 +1,66 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Portafolio Personal v2.0 con React y TypeScript
 
-# Run and deploy your AI Studio app
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-This contains everything you need to run your app locally.
+### [➡️ Ver Demo en Vivo](https://mi-portafolio-react-sable.vercel.app/)
 
-View your app in AI Studio: https://ai.studio/apps/drive/1AEjvjGGjGDsCJ3_rAvmHsmJjFKWKEzX5
+---
 
-## Run Locally
+<!-- 💡 CONSEJO: Graba un GIF corto de tu portafolio en acción y ponlo aquí. ¡Es muy efectivo!
+Sube el GIF al issue tracker del repositorio y copia el enlace. Reemplaza la URL de abajo. -->
+<p align="center">
+  <img src="URL_DE_TU_GIF_AQUI" alt="Demo animada del portafolio" width="800"/>
+</p>
 
-**Prerequisites:**  Node.js
+## 🚀 Sobre el Proyecto
 
+Este repositorio contiene el código fuente de mi portafolio personal, una **Single Page Application (SPA)** moderna e interactiva construida desde cero. El proyecto no solo sirve como una vitrina para mis habilidades y trabajos, sino que también es en sí mismo un ejemplo práctico de mi dominio de tecnologías frontend de vanguardia y mi compromiso con la escritura de código limpio, escalable y con las mejores prácticas.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## ✨ Características Principales
+
+*   **Arquitectura SPA con React:** Desarrollado sobre una arquitectura de componentes reutilizables que asegura un rendimiento fluido y una excelente experiencia de usuario.
+*   **Soporte Multi-idioma (i18n):** Implementa un sistema de internacionalización que permite cambiar el idioma de la interfaz. Esto demuestra un manejo avanzado del estado de la aplicación (React Context) y la capacidad de construir soluciones para una audiencia global.
+*   **Efecto Spotlight Interactivo:** Incluye un efecto visual de "foco de luz" que sigue el cursor del mouse, creado con CSS personalizado. Esta característica no solo es atractiva, sino que demuestra creatividad y un dominio del manejo de eventos y estilos dinámicos.
+*   **Formulario de Contacto Funcional:** Integra un formulario de contacto totalmente operativo que utiliza el servicio `formspree.io` para la gestión de envíos, demostrando la capacidad de integrar servicios de terceros en una aplicación.
+*   **Diseño 100% Responsivo:** Maquetado con **Tailwind CSS**, la interfaz se adapta perfectamente a cualquier tamaño de pantalla, desde dispositivos móviles hasta monitores de escritorio.
+*   **Código Fuertemente Tipado:** El uso de **TypeScript** en todo el proyecto garantiza un código robusto, reduce los errores en tiempo de ejecución y mejora drásticamente la mantenibilidad y la experiencia de desarrollo.
+
+## 🛠️ Stack Tecnológico
+
+*   **Framework Principal:** React.js
+*   **Lenguaje:** TypeScript
+*   **Estilos:** Tailwind CSS, CSS3 (para efectos personalizados)
+*   **Herramientas de Construcción:** Vite
+*   **Iconos:** React Icons
+*   **Integraciones:** Formspree.io
+*   **Control de Versiones:** Git, GitHub
+*   **Despliegue:** Vercel
+
+## ⚙️ Instalación y Ejecución Local
+
+Para clonar y ejecutar este proyecto en tu máquina local, sigue estos sencillos pasos:
+
+1.  **Clona el repositorio:**
+    ```bash
+    git clone https://github.com/saul-enrique/mi-portafolio-react.git
+    ```
+
+2.  **Navega al directorio del proyecto:**
+    ```bash
+    cd mi-portafolio-react
+    ```
+
+3.  **Instala las dependencias:**
+    ```bash
+    npm install
+    ```
+
+4.  **Ejecuta la aplicación en modo de desarrollo:**
+    ```bash
+    npm run dev
+    ```
+
+    Abre [http://localhost:5173](http://localhost:5173) (o el puerto que indique Vite) en tu navegador para ver la aplicación.
