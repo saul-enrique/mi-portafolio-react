@@ -9,10 +9,9 @@
 
 ---
 
-<!-- 💡 CONSEJO: Graba un GIF corto de tu portafolio en acción y ponlo aquí. ¡Es muy efectivo!
-Sube el GIF al issue tracker del repositorio y copia el enlace. Reemplaza la URL de abajo. -->
+
 <p align="center">
-  <img src="URL_DE_TU_GIF_AQUI" alt="Demo animada del portafolio" width="800"/>
+  <img src="<img width="1639" height="913" alt="Image" src="https://github.com/user-attachments/assets/e3964267-fa11-46f2-a621-00d3cba27d6f" />" alt="Demo animada del portafolio" width="800"/>
 </p>
 
 ## 🚀 Sobre el Proyecto
