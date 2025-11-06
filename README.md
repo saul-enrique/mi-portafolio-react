@@ -10,7 +10,7 @@
 ---
 
 
-![Demo animada del portafolio](https://github.com/user-attachments/assets/dd04261f-fa1f-46f2-ab2f-08dceba27def)
+
 
 ## 🚀 Sobre el Proyecto
 
